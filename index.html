@@ -8,18 +8,55 @@
 </head>
 <body>
     <header>
-        <div class="logo">PIZZ<span>ARA</span></div>
+        <div class="logo">
+           <img src="../images/logo.svg" alt="Pizzaara Logo" width="200">
+        </div>
         <nav>
-          <a class="active" href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Shop</a>
-          <a href="#">Contact</a>
+          <div class="top">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+          </div>
+          <div id="hamburger">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </div>
+
+
         </nav>
+          
         <div class="icons">
+          <div class="cart-icon">
+             <div class="couter-1">1</div>
           <img src="../images/shopping-cart.png" alt="Cart"/>
+          </div>
           <img src="../images/avatar.png" alt="User"/>
         </div>
-    </header>
+
+        </header>
+        <div class="info">
+        <div class="contact-cards">
+
+          <img src="./images/kebab.png"width="50",high="2em" alt="kebab">
+        <div>italian pizza</div>
+        <p>Ksh.1600</p>
+        <div class="quntity">
+          <button class="decriment"> - </button>>
+          <button>1</button>
+          <button class="incriment">+</button>
+        </div>
+        <div>
+        <p>Ksh.1600</p>
+        </div>
+        </div>
+        </div>
+
+
     <section class="hero">
         <div class="hero-text">
           <p class="tagline">Easy way to order your food</p>
@@ -62,8 +99,8 @@
     <div class="hero-image">
       <img src="../images/hero-pizza.png" alt="Pizza"/>
       <div class="pizza-thumbnails">
-        <img src="../images/pizza-1.png" alt="Pizza 1"/>
-        <img src="../images/pizza-2.png" alt="Pizza 2"/>
+        <img src="../images/pizza-1.png" alt="Pizza 1" class="pizza1"/>
+        <img src="../images/pizza-2.png" alt="pPizza 2"/>
         <img src="../images/pizza-3.png" alt="Pizza 3"/>
         <img src="../images/pizza-4.png" alt="Pizza 4"/>
       </div>
@@ -74,29 +111,31 @@
     <h2 class="menu-title"><span>Special Menu</span> For You</h2>
 
     <div class="menu-tabs">
-      <span class="active">Chicken Pizza</span>
-      <span>Pepperoni</span>
-      <span>Margherita</span>
-      <span>Hawaiian</span>
-      <span>Meat Lover’s Pizza</span>
+      <div class="pizza">Chicken Pizza</div>
+      <div class="pizza">Pepperoni</div>
+      <div class="pizza">Margherita</div>
+      <div class="pizza">Hawaiian</div>
+      <div class="pizza">Meat Lover’s Pizza</div>
     </div>
 
     <hr class="divider"/>
-
-    <div class="pizza-items">
+      <!--  -->
+    <div class="chicken-pizza pizza-section">
       <div class="pizza-card">
         <img src="../images/barbecue-chicken-pizza.png" alt="BBQ Chicken Pizza" />
         <h3>BBQ Chicken Pizza</h3>
+        <div>
         <p class="desc">(Cheese with Shrimp)</p>
         <p class="price">Ksh. 1500</p>
-        <button>Add to Cart</button>
+        </div>
+       <button class="buttons">Add to Cart</button>
       </div>
       <div class="pizza-card">
         <img src="../images/tandoori-chicken.png" alt="Tandoori Chicken Pizza" />
         <h3>Tandoori Chicken Pizza</h3>
         <p class="desc">(Cheese with Shrimp)</p>
         <p class="price">Ksh. 1500</p>
-        <button>Add to Cart</button>
+       <button class="buttons">Add to Cart</button>
       </div>
 
       <div class="pizza-card">
@@ -104,10 +143,107 @@
         <h3>Chicken Kebab Pizza</h3>
         <p class="desc">(Cheese with Shrimp)</p>
         <p class="price">Ksh. 1500</p>
-        <button>Add to Cart</button>
+       <button class="buttons">Add to Cart</button>
       </div>
-    </div>
-    <div class="view-more">
+      </div>
+        <!--  -->
+     <div class="pepperoni pizza-section">
+      <div class="pizza-card">
+        <img src="./images/fling pepperoni.png" alt="fling pepperoni" />
+        <h3>fling pepperoni</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+      <div class="pizza-card">
+        <img src="./images/oven baked pepperoni pizza.png" alt="oven baked pepperoni pizza"/>
+        <h3>oven baked pepperoni pizza</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+       <div class="pizza-card">
+        <img src="./images/pizza with ham&cheese.jpg" alt="pizza with ham&cheese" />
+        <h3>pizza with ham&cheese</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+      </div>
+      <!--  -->
+        <div class="Margherita pizza-section">
+      <div class="pizza-card">
+        <img src="./images/italian food.jpg" alt="italian food" />
+        <h3>italian food</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+      <div class="pizza-card">
+        <img src="./images/italian pizza.jpg" alt="images/italian pizza" />
+        <h3>mangatita on white background.</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+       <div class="pizza-card">
+        <img src="./images/mangatita on white background.jpg" alt="mangatita on white background" />
+        <h3>mangatita on white background</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+      </div>
+      <!-- sec -->
+      <div class="Hawaiian pizza-section  ">
+      <div class="pizza-card">
+        <img src="./images/delious hawaiian.jpg" alt="delious hawaiian" />
+        <h3>delious hawaiian</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+      <div class="pizza-card">
+        <img src="./images/hem&pineapple.jpg" alt="hem&pineapple" />
+        <h3>hem&pineapplePizza</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+       <div class="pizza-card">
+        <img src="./images/overhead of freshly baked.jpg" alt="freshly baked Pizza" />
+        <h3>freshly baked Pizza</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+      </div>
+      <!--  -->
+      <div class="Meat-pizza pizza-section">
+      <div class="pizza-card">
+        <img src="./images/td  meaty.jpg" alt="td  meaty" />
+        <h3>td  meaty Pizza</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+      <div class="pizza-card">
+        <img src="./images/valentines day dinner.jpg" alt="Tandoori Chicken Pizza" />
+        <h3>Tandoori Chicken Pizza</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+       <div class="pizza-card">
+        <img src="./images/meat lovers.jpg" alt="Chicken Kebab Pizza" />
+        <h3>Chicken Kebab Pizza</h3>
+        <p class="desc">(Cheese with Shrimp)</p>
+        <p class="price">Ksh. 1500</p>
+       <button class="buttons">Add to Cart</button>
+      </div>
+      </div>
+<div>
+  <div class="view-more">
       <button>View More</button>
     </div>
   </section>
@@ -227,6 +363,13 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/scrip.js">
+
+    </script>
+    <script src="js/cart.js">
+
+    </script>
 
 </body>
 </html>
